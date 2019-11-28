@@ -9,37 +9,17 @@ An Udacity Full Stack Web Developer III Nanodegree Project.
 * Application URL: http://catalog-udacity.com
 
 #### Server Configuration Changes
-1. Login ssh to server
-<br>
-`ssh -i grader grader@35.156.227.109 -p 2200`
-2. Update all currently installed packages.
-<br>
-`sudo apt-get update && sudo apt-get upgrade`
-3. Change ssh port to 2200
-<br>
-`sudo nano /etc/ssh/sshd_config` 
-<br>
-then search for port and change value to 2220 instead of 22
+1. Login ssh to server : `ssh -i grader grader@35.156.227.109 -p 2200`
+2. Update all currently installed packages. : `sudo apt-get update && sudo apt-get upgrade`
+3. Change ssh port to 2200 : `sudo nano /etc/ssh/sshd_config` 
+* then search for port and change value to 2220 instead of 22
 
 
 4. Firewall Setup and Configuration
-* Setup Firewall with UFW
- <br>
- `sudo apt-get install ufw`
-* disable default incoming ports 
-<br>
-`sudo ufw default deny incoming`
-* allow default outgoing ports
-<br>
- `sudo ufw default allow outgoing`
- <br>
-* then allow ports only we need
-<br>
-`sudo ufw allow 80/tcp`
-<br>
-`sudo ufw allow 123/tcp`
-<br>
-`sudo ufw allow 2200/tcp`
+* Setup Firewall with UFW : `sudo apt-get install ufw`
+* disable default incoming ports : `sudo ufw default deny incoming`
+* allow default outgoing ports : `sudo ufw default allow outgoing`
+* then allow ports only we need : `sudo ufw allow 80/tcp` & `sudo ufw allow 123/tcp` &`sudo ufw allow 2200/tcp`
 
 #### Software Installed
 * Apache2 :
@@ -48,9 +28,9 @@ then search for port and change value to 2220 instead of 22
 `sudo apt-get install postgresql postgresql-contrib`
 * Python3 :
 `sudo apt-get install python3`
-* python3-pip
+* python3-pip :
 `sudo apt-get install python3-pip`
-* virtual environment
+* virtual environment :
 `sudo virtualenv -p python3 venv3`
 
 #### Dependencies Installed
