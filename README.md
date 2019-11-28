@@ -33,11 +33,11 @@ An Udacity Full Stack Web Developer III Nanodegree Project.
 * virtual environment :
 `sudo virtualenv -p python3 venv3`
 
-#### Dependencies Installed
-* flask
-* requests
-* psycopg2
-* sqlalchemy
-* oauth2client
-* httplib2
-* libpq-dev
+#### Third Party Resources  Installed
+* flask `pip3 install Flask`
+* requests `pip3 install requests`
+* psycopg2 `sudo apt-get install python3-psycopg2`
+* sqlalchemy `pip3 install SQLAlchemy`
+* oauth2client `pip3 install --upgrade oauth2client`
+* httplib2 ` pip3 install httplib2`
+* libpq-dev `sudo apt-get install ibpq-dev`
